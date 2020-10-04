@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">RunBus</string>
+
+    <string-array name="departure">
+        <item>Select Departure</item>
+        <item>Jaffna</item>
+        <item>Trincomalee</item>
+        <item>Batticaloa</item>
+        <item>Colombo</item>
+        <item>Kandy</item>
+    </string-array>
+
+    <string-array name="arrival">
+        <item>Select Arrival</item>
+        <item>Jaffna</item>
+        <item>Trincomalee</item>
+        <item>Batticaloa</item>
+        <item>Colombo</item>
+        <item>Kandy</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Select Type</item>
+        <item>A/C</item>
+        <item>Non A/C</item>
+
+    </string-array>
+
+    <string-array name="agency">
+        <item>Select Agency</item>
+        <item>Surena</item>
+        <item>Royal</item>
+        <item>NCG</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Select Status</item>
+        <item>Available</item>
+        <item>Unavailable</item>
+    </string-array>
+</resources>

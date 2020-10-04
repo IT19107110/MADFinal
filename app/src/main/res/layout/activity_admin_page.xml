@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPage"
+    android:background="@drawable/bg">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="66dp"
+        android:background="#F31605"
+        app:layout_constraintEnd_toStartOf="@+id/schedule"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:background="#F31605"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="Run Bus"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/busDetails"
+        android:layout_width="134dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="80dp"
+        android:text="Bus Details"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        style="@style/textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule"
+         />
+
+    <Button
+        android:id="@+id/viewBus"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="View"
+        style="@style/button"
+        app:layout_constraintEnd_toStartOf="@+id/addBus"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busDetails" />
+
+    <Button
+        android:id="@+id/addBus"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Add"
+        style="@style/button"
+        app:layout_constraintEnd_toStartOf="@+id/updateBus"
+        app:layout_constraintTop_toBottomOf="@+id/busDetails" />
+
+    <Button
+        android:id="@+id/updateBus"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="Update"
+        style="@style/button"
+        app:layout_constraintEnd_toStartOf="@id/deleteBus"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busDetails" />
+
+    <Button
+        android:id="@+id/deleteBus"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Delete"
+        style="@style/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busDetails" />
+
+    <TextView
+        android:id="@+id/busSchedule"
+        android:layout_width="134dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="80dp"
+        android:text="Schedule"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        style="@style/textview"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBus" />
+
+    <Button
+        android:id="@+id/viewSchedule"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="View"
+        style="@style/button"
+        app:layout_constraintEnd_toStartOf="@+id/addSchedule"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busSchedule" />
+
+    <Button
+        android:id="@+id/addSchedule"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Add"
+        style="@style/button"
+        app:layout_constraintEnd_toStartOf="@+id/updateSchedule"
+        app:layout_constraintTop_toBottomOf="@+id/busSchedule" />
+
+    <Button
+        android:id="@+id/updateSchedule"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="Update"
+        style="@style/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busSchedule" />
+
+    <Button
+        android:id="@+id/deleteSchedule"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Delete"
+        style="@style/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busSchedule" />
+
+    <TextView
+        android:id="@+id/busEmp"
+        android:layout_width="134dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="80dp"
+        android:text="Employee"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        style="@style/textview"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addSchedule" />
+
+    <Button
+        android:id="@+id/viewEmp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="View"
+        style="@style/button"
+        app:layout_constraintEnd_toStartOf="@+id/addEmp"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busEmp" />
+
+    <Button
+        android:id="@+id/addEmp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Add"
+        style="@style/button"
+        app:layout_constraintEnd_toStartOf="@+id/updateEmp"
+        app:layout_constraintTop_toBottomOf="@+id/busEmp" />
+
+    <Button
+        android:id="@+id/updateEmp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="Update"
+        style="@style/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busEmp" />
+
+    <Button
+        android:id="@+id/deleteEmp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Delete"
+        style="@style/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busEmp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
