@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-public class View extends AppCompatActivity {
+public class ViewS extends AppCompatActivity {
 
     DatabaseHelper Db;
     Button btnViewAll, btnViewId;
@@ -30,28 +30,28 @@ public class View extends AppCompatActivity {
 
         Spinner spinner1 = (Spinner) findViewById(R.id.pickDeparture);
 
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(View.this,
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(ViewS.this,
                 android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.departure));
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(adapter1);
 
         Spinner spinner2 = (Spinner) findViewById(R.id.pickArrival);
 
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(View.this,
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(ViewS.this,
                 android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.arrival));
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(adapter2);
 
         Spinner spinner3 = (Spinner) findViewById(R.id.pickType);
 
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(View.this,
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(ViewS.this,
                 android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.type));
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner3.setAdapter(adapter3);
 
         Spinner spinner4 = (Spinner) findViewById(R.id.pickAgency);
 
-        ArrayAdapter<String> adapter4 = new ArrayAdapter<String>(View.this,
+        ArrayAdapter<String> adapter4 = new ArrayAdapter<String>(ViewS.this,
                 android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.agency));
         adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner4.setAdapter(adapter4);
